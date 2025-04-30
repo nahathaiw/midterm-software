@@ -1,0 +1,14 @@
+{
+    "hosting": {
+      "public": "build",  // Ensure this is pointing to the "build" directory
+      "rewrites": [
+        {
+          "source": "/**",  // This will match any URL
+          "destination": "/index.html"  // Redirect all requests to index.html (for React Router)
+        }
+      ],
+      "cleanUrls": true,  // Optional: remove ".html" extensions from URLs
+      "trailingSlash": false  // Optional: remove trailing slash from URLs
+    }
+  }
+  
